@@ -1,7 +1,6 @@
 * {
   background-color: black; 
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
 }
 .header{
     display: flex;
@@ -11,8 +10,8 @@
     width: 40%;
     margin: 0 auto;
     border-radius: 18px;
-    border: 2px solid rgb(255, 0, 0); 
-
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
 
 .menu{
@@ -21,13 +20,23 @@
     gap: 32px;
 /*     color: white;
  */    
-     border: 2px solid rgb(255, 0, 0); 
-
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
-/* deve diventare anchor */
-.menu li{
-/*     color: white;
- */}
+.menu a {
+  text-decoration: none;
+  color: rgb(182, 181, 181);
+}
+.menu a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-home.active a{
+    background-color: #222222;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 8px 8px 8px;
+}
 
 .main{
     display: flex;
@@ -35,30 +44,34 @@
     justify-content: center;
     align-content: center;
 
-    padding-left: 30%;
     padding-top: 2%;
-    border: 2px solid rgb(255, 0, 0); 
-
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
 
 .main-box{
-        border: 2px solid rgb(255, 0, 0); 
+/*     border: 2px solid rgb(255, 0, 0); 
+ */        padding-left: 30%;
 
 }
+
+
 .title span{
     font-weight: semibold;
     font-size: 30px;
-    border: 2px solid rgb(255, 0, 0); 
-
+    color: #fff;
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
 .para p{
+    color: white;
 
-    border: 2px solid rgb(255, 0, 0); 
-
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
 .footer{
-        border: 2px solid rgb(255, 0, 0); 
-        width: 100%;
+/*     border: 2px solid rgb(255, 0, 0); 
+ */        width: 100%;
         height: fit-content;
         padding-top: 8%;
         display: flex;
@@ -71,6 +84,6 @@
     display: flex;
     list-style: none;
     gap: 32px;
-    border: 2px solid rgb(255, 0, 0); 
-
+/*     border: 2px solid rgb(255, 0, 0); 
+ */
 }
