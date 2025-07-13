@@ -158,8 +158,12 @@ iframe {
 .bold {
   font-weight: bold;
 }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 .contact-grid {
- /*  border: 2px solid darkblue; */
+  /*  border: 2px solid darkblue; */
   display: grid;
   row-gap: 12px;
   column-gap: 12px;
@@ -168,46 +172,80 @@ iframe {
   grid-template-areas:
     "contact-1 contact-2"
     "contact-3 contact-4";
+  flex-wrap: wrap;
 }
 .contact-1 {
-  border: 2px solid rgb(55 65 81 );
+  border: 2px solid rgb(55 65 81);
   border-radius: 8px;
   grid-area: contact-1;
-    display: flex;
+  display: flex;
   align-items: center;
-  
+  justify-content: space-evenly;
 }
 .contact-2 {
-  border: 2px solid rgb(55 65 81 );
+  border: 2px solid rgb(55 65 81);
   border-radius: 8px;
   grid-area: contact-2;
-    display: flex;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .contact-3 {
-  border: 2px solid rgb(55 65 81 );
+  border: 2px solid rgb(55 65 81);
   border-radius: 8px;
   grid-area: contact-3;
-    display: flex;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .contact-4 {
-  border: 2px solid rgb(55 65 81 );
+  border: 2px solid rgb(55 65 81);
   border-radius: 8px;
   grid-area: contact-4;
-    display: flex;
-  align-items: center;
-}
-.card{
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
-.icon{
+.content {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 5%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-.icon i{
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-right: 4%;
+}
+.icon i {
   font-size: 20px;
+}
+.title {
+  font-weight: bold;
+}
+.details {
+  color: rgb(182, 181, 181);
+  font-size: 15px;
+  margin: 0;
+}
+.text-c {
+  width: 100%;
+  height: fit-content;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.text-c span {
+  font-size: 30px;
+}
+.text-c p {
+  color: rgb(182, 181, 181);
+  margin: 0;
+  margin-bottom: 2%;
 }
