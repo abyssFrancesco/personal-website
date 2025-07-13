@@ -1,168 +1,112 @@
-.BORDER{
-  border: solid 2px red;
+.B {
+  border: 2px solid red;
 }
-.INNERBORDER{
-    border: solid 1px rgb(76, 0, 255);
-
-}
-.flex-start{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: start;
-  margin-bottom: 15px;
-  
+.IB {
+  border: 1px solid blueviolet;
 }
 * {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 6vh;
-  width: 40%;
-  margin: 0 auto;
-  border-radius: 18px;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 32px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: rgb(182, 181, 181);
-}
-
-.menu a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.menu-home.active a {
-  background-color: #222222;
-  color: #fff;
-  border-radius: 8px;
-  padding: 8px 8px 8px 8px;
-}
-
-
-.main {
- /*  border: 2px solid rgb(255, 0, 0);*/
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra orizzontalmente tutto il contenuto */
-  justify-content: center;
-  padding-top: 2%;
-  width: 100%;
-}
-
-.main-box {
-/*   border: 2px solid rgb(255, 0, 0);
- */  display: flex;
-  flex-direction: column;
-  align-items: centert; /* Centra il testo */
-  justify-content: center;
-  width: 40%; /* Larghezza contenuta ma non troppo stretta */
-}
-
-.title {
-  margin-bottom: 10px;
-}
-
-.title span {
-  font-weight: semibold;
-  font-size: 30px;
-  color: #fff;
-}
-
-.para p {
   color: white;
 }
-
-.img {
-  display: flex;
-
-  gap: 15px; /* Spazio tra le immagini (aumentato) */
-}
-
-.img img {
-  width: 330px;
-  border-radius: 8px;
-}
-
-.footer {
+.header-box {
   width: 100%;
   height: fit-content;
-  padding-top: 5%;
-  padding-bottom: 2%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
-
-.footer-items ul {
+.header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 6vh;
+  width: 40%;
+}
+.menu {
+  display: flex;
+  gap: 20px;
   list-style: none;
-  gap: 32px;
 }
-
-.footer-items ul a {
-  color: rgb(182, 181, 181);
-  transition: transform 0.2s;
+.menu a {
+  text-decoration: none;
 }
-
-.footer-items ul li a i:hover {
-  color: #fff;
-  transform: scale(1.15);
+.main-box{
+  width: 100%;
+    height: fit-content; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
+.main{
+  width: 40%;
 
-
-.text.flex-start {
-    flex-direction: column !important;
-}
-
-/* contact ---------------------------------------*/
-.menu-contact.active a {
-  background-color: #222222;
-  color: #fff;
-  border-radius: 8px;
-  padding: 8px 8px 8px 8px;
-}
-
-.main-c {
+  /* height: fit-content; */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra i contenuti anziché usare padding-left */
   justify-content: center;
-  padding-top: 2%;
+  align-items: center;
+  align-content: center;
+
+}
+.text{
   width: 100%;
+  height: fit-content;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
-.main-box-c {
-  /* Rimuove il padding-left: 30% e utilizza il centraggio */
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
+.text span{
+  font-size: 30px;
 }
-
-.pr {
+.text p{
   color: rgb(182, 181, 181);
 }
-
-/* about ----------------------------------------------------- */
-.menu-about.active a {
-  background-color: #222222;
-  color: #fff;
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.img img{
+  width: 45%;
+  height: 45%;
   border-radius: 8px;
-  padding: 8px 8px 8px 8px;
+}
+.frame-grid{
+  display: grid;
+  grid-area: ;
+}
+
+
+
+
+
+.footer-box{
+  margin-top: 2%;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footer ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.footer ul li a i{
+
 }
