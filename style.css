@@ -32,6 +32,7 @@
 .menu a {
   text-decoration: none;
 }
+
 .main-box{
   width: 100%;
     height: fit-content; 
@@ -77,15 +78,51 @@
   height: 45%;
   border-radius: 8px;
 }
-.frame-grid{
-  display: grid;
-  grid-area: ;
+/* Study better this part ------------------------- */
+.mixer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Cambiato da flex-start */
+  align-items: center;
+  gap: 20px; /* Aumentato il gap */
+  margin-top: 2%;
+  flex-wrap: wrap; /* Aggiungi flex-wrap per la responsività */
 }
-
-
-
-
-
+.main-mixer {
+  max-width: 380px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 11px;
+  flex: 1; /* Aggiungi flex per una migliore distribuzione */
+}
+.spotify-main {
+  width: 320px;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.mixer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  max-width: 320px; 
+}
+.song{
+  width: 320px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+iframe{
+  border: none;
+  max-width: 100%;
+}
+/* ------------------------------------------------ */
 .footer-box{
   margin-top: 2%;
   width: 100%;
