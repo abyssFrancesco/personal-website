@@ -33,12 +33,14 @@
   text-decoration: none;
   color: rgb(182, 181, 181);
 }
-
-.home.active a{
+.menu a:hover {
+  color: rgb(255, 255, 255);
+}
+.home.active a {
   background-color: #222222;
   color: #fff;
-   border-radius: 8px;
-     padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 .main-box {
   width: 100%;
@@ -153,7 +155,10 @@ iframe {
 }
 .footer i {
   font-size: 18px;
+  color: rgb(182, 181, 181);
+  
 }
+
 .copy {
   display: flex;
   justify-content: center;
@@ -168,11 +173,11 @@ iframe {
 .bold {
   font-weight: bold;
 }
-.contact.active a{
+.contact.active a {
   background-color: #222222;
   color: #fff;
-   border-radius: 8px;
-     padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 .grid {
   display: flex;
@@ -197,6 +202,12 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.contact-1:hover {
+  transform: scale(1.02);
 }
 .contact-2 {
   border: 2px solid rgb(55 65 81);
@@ -205,6 +216,12 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.contact-2:hover {
+  transform: scale(1.02);
 }
 .contact-3 {
   border: 2px solid rgb(55 65 81);
@@ -213,6 +230,12 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.contact-3:hover {
+  transform: scale(1.02);
 }
 .contact-4 {
   border: 2px solid rgb(55 65 81);
@@ -221,6 +244,12 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.contact-4:hover {
+  transform: scale(1.02);
 }
 .card {
   display: flex;
@@ -251,6 +280,7 @@ iframe {
   font-size: 15px;
   margin: 0;
 }
+
 .text-c {
   width: 100%;
   height: fit-content;
@@ -264,4 +294,13 @@ iframe {
   color: rgb(182, 181, 181);
   margin: 0;
   margin-bottom: 2%;
+}
+.main-box-c {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 25%;
 }
