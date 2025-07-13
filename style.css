@@ -31,8 +31,15 @@
 }
 .menu a {
   text-decoration: none;
+  color: rgb(182, 181, 181);
 }
 
+.home.active a{
+  background-color: #222222;
+  color: #fff;
+   border-radius: 8px;
+     padding: 8px 12px;
+}
 .main-box {
   width: 100%;
   height: fit-content;
@@ -144,6 +151,9 @@ iframe {
   list-style: none;
   gap: 20px;
 }
+.footer i {
+  font-size: 18px;
+}
 .copy {
   display: flex;
   justify-content: center;
@@ -157,6 +167,12 @@ iframe {
 /* contact */
 .bold {
   font-weight: bold;
+}
+.contact.active a{
+  background-color: #222222;
+  color: #fff;
+   border-radius: 8px;
+     padding: 8px 12px;
 }
 .grid {
   display: flex;
