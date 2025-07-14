@@ -203,6 +203,12 @@ iframe {
 .large {
   font-weight: 550;
 }
+.color{
+    color: rgb(182, 181, 181);
+}
+.italic{
+  font-style: oblique;
+}
 .contact.active a {
   background-color: #222222;
   color: #fff;
@@ -231,7 +237,7 @@ iframe {
   grid-area: contact-1;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   cursor: pointer;
   width: 100%;
   transition: transform 0.3s ease;
@@ -245,7 +251,7 @@ iframe {
   grid-area: contact-2;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:  center;
   cursor: pointer;
   width: 100%;
   transition: transform 0.3s ease;
@@ -259,7 +265,7 @@ iframe {
   grid-area: contact-3;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:  center;
   cursor: pointer;
   width: 100%;
   transition: transform 0.3s ease;
@@ -273,7 +279,7 @@ iframe {
   grid-area: contact-4;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:  center;
   cursor: pointer;
   width: 100%;
   transition: transform 0.3s ease;
@@ -284,13 +290,16 @@ iframe {
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
+  
 }
 .content {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -397,13 +406,17 @@ iframe {
   z-index: 4;
 }
 .timeline {
-  margin-top: 6%;
+  margin-top: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 60vh;
+  height: 30vh;
+   transition: transform 0.3s ease;
+}
+.timeline:hover{
+  transform: scale(1.02);
 }
 .def {
   display: flex;
@@ -421,10 +434,30 @@ iframe {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  border: 2px solid rgb(55 65 81);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
 }
 .job-1 {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+}
+.job-1:hover{
+  transform: scale(1.02);
+}
+.t{
+  display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: 10%;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+ 
+  
+}
+.pew p{
+  margin: 0;
+  color: rgb(182, 181, 181);
 }
