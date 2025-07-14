@@ -304,3 +304,67 @@ iframe {
   align-content: center;
   margin-bottom: 25%;
 }
+/* About---------------------------------------------------- */
+.about.active a {
+  background-color: #222222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.text-a {
+  width: 100%;
+  height: fit-content;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.text-a span {
+  font-size: 30px;
+}
+.text-a p {
+  color: rgb(182, 181, 181);
+  margin: 0;
+  margin-bottom: 2%;
+}
+.carousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  position: relative;
+  
+}
+.carousel img{
+  width: 30%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.5s ease, z-index 0.1s ease;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.carousel img:hover{
+   transform: rotate(var(--initial-rotation)) rotateY(180deg);  
+}
+
+.left {
+  --initial-rotation: -8deg;
+  transform: rotate(var(--initial-rotation));
+  z-index: 1;
+}
+.right {
+  --initial-rotation: 5deg;
+  transform: rotate(var(--initial-rotation));
+  z-index: 2;
+}
+.leftl {
+  --initial-rotation: -3deg;
+  transform: rotate(var(--initial-rotation));
+  z-index: 3;
+}
+.rightr {
+  --initial-rotation: 6deg;
+  transform: rotate(var(--initial-rotation));
+  z-index: 4;
+}
