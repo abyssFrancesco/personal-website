@@ -72,12 +72,18 @@
 .text p {
   color: rgb(182, 181, 181);
 }
-.pulse{
+.pulse {
   animation: pulse 1s infinite;
 }
 @keyframes pulse {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 .img {
   display: flex;
@@ -87,7 +93,6 @@
   gap: 20px;
   flex-wrap: wrap;
   cursor: pointer;
-  
 }
 .img img {
   width: 45%;
@@ -160,17 +165,27 @@ iframe {
   align-items: center;
   align-content: center;
 }
+.footer a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
 .footer ul {
   display: flex;
   list-style: none;
   gap: 20px;
 }
+
 .footer i {
   font-size: 18px;
   color: rgb(182, 181, 181);
-  
 }
-
+.footer a:hover {
+  transform: scale(1.1);
+}
+.footer a:hover i {
+  color: #fff;
+}
 .copy {
   display: flex;
   justify-content: center;
@@ -185,7 +200,7 @@ iframe {
 .bold {
   font-weight: bold;
 }
-.large{
+.large {
   font-weight: 550;
 }
 .contact.active a {
@@ -340,7 +355,7 @@ iframe {
   margin: 0;
   margin-bottom: 2%;
 }
-.carousel{
+.carousel {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -348,19 +363,17 @@ iframe {
   align-content: center;
   width: 100%;
   position: relative;
-  
 }
-.carousel img{
-  width: 30%;
+.carousel img {
+  width: 25%;
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.5s ease, z-index 0.1s ease;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
 }
-.carousel img:hover{
-   transform: rotate(var(--initial-rotation)) rotateY(180deg);  
+.carousel img:hover {
+  transform: rotate(var(--initial-rotation)) rotateY(180deg);
 }
 
 .left {
@@ -383,7 +396,7 @@ iframe {
   transform: rotate(var(--initial-rotation));
   z-index: 4;
 }
-.timeline{
+.timeline {
   margin-top: 6%;
   display: flex;
   justify-content: center;
@@ -392,29 +405,26 @@ iframe {
   width: 100%;
   height: 60vh;
 }
-.def{
+.def {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
   height: 100%;
-
-
 }
-.def span{
+.def span {
   font-size: 24px;
 }
-.jobs{
+.jobs {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
-.job-1{
+.job-1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 10%;
-  
 }
