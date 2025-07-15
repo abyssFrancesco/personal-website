@@ -92,7 +92,7 @@
   align-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  cursor: pointer;
+  c/* ursor: pointer; */
 }
 .img img {
   width: 45%;
